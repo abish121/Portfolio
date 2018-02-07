@@ -1,0 +1,47 @@
+{
+    "name": "Apply",
+    "description": "This endpoint is used for applying for the Developer role at ElpisDesign.",
+    "authentication": [],
+    "routes": {
+        "/apply.php": {
+            "methods": [
+                "POST"
+            ],
+            "args": {
+                "name": {
+                    "required": true,
+                    "description": "Name of the Applicant"
+                },
+                "email": {
+                    "required": true,
+                    "description": "Email of the Applicant"
+                },
+                "phone": {
+                    "required": true,
+                    "description": "Phone Number of the Applicant",
+                    "format": "Use International Format. Ex: +919891999999"
+                },
+                "current_location": {
+                    "required": true,
+                    "description": "Name of the Applicant. If you're in Delhi, mention where (Ex: Rajendra Nagar) ."
+                },
+                "github": {
+                    "required": true,
+                    "description": "Link to your Github Profile. If you don't have one, we recommend you should make it and send the link"
+                },
+                "blog": {
+                    "required": true,
+                    "description": "We like people who contribute to the knowledge of the world. You can also share your blog, quora or stackoverflow profile if you don't have a blog. You can specify multiple URLs."
+                },
+                "resume": {
+                    "required": true,
+                    "description": "Link to your resume. If you have a pdf resume, you can upload it on Google Docs and send the link. (Please double check the permissions of the document to let us see it)"
+                },
+                "intro": {
+                    "required": true,
+                    "description": "You can tell about a cool side project you have done in a line or two here. Please don't mention the on-job projects, it's what you do outside the office that defines you... Ah! Philosophy"
+                }
+            }
+        }
+    }
+}
